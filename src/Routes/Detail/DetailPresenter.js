@@ -4,10 +4,10 @@ import styled from "styled-components";
 
 const DetailPresenter = ({ result, error, loading}) => null;
 
-DetailPresenter.PropTypes = {
-    result: propTypes.array,
-    error: propTypes.array,
-    loading: propTypes.bool.isRequired
+DetailPresenter.propTypes = {
+    result: PropTypes.array,
+    error: PropTypes.array,
+    loading: PropTypes.bool.isRequired
 };
 
 export default DetailPresenter;

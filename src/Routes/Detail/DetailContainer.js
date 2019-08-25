@@ -28,7 +28,7 @@ export default class extends React.Component {
             history: {push}
         } = this.props;
         const {isMovie} = this.state;
-        const parsedId = parsedInt(id);
+        const parsedId = parseInt(id);
         if(isNaN(parsedId)) {
             return push("/");
         }

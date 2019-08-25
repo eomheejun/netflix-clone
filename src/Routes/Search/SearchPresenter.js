@@ -4,13 +4,13 @@ import styled from "styled-components";
 
 const SearchPresenter = ({ tvResults, movieResults, searchTerm, error, loading}) => null;
 
-SearchPresenter.PropTypes = {
-    tvResults: propTypes.array,
-    movieResults: propTypes.array,
-    searchTerm: propTypes.string,
-    error: propTypes.array,
-    loading: propTypes.bool.isRequired,
-    handleSubmit: propTypes.func.isRequired
+SearchPresenter.propTypes = {
+    tvResults: PropTypes.array,
+    movieResults: PropTypes.array,
+    searchTerm: PropTypes.string,
+    error: PropTypes.array,
+    loading: PropTypes.bool.isRequired,
+    handleSubmit: PropTypes.func.isRequired
 };
 
 export default SearchPresenter;
