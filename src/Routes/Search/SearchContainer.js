@@ -8,12 +8,20 @@ export default class extends React.Component {
         movieResults: null,
         searchTerm: "",
         error: null,
-        loading: true
+        loading: false
 
     };
 
-    async componentDidMount() {
+    handleSumbmit = () => {
         const {searchTerm} = this.state;
+        if(searchTerm !== ""){
+            this.searchByTerm();
+        }
+    };
+
+    searchByTerm = async() => {
+        const {searchTerm} = this.state;
+        this.setStat({loading: true});
         try{
             const {
                 data: { results: tvResults}
