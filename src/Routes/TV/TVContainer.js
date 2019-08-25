@@ -28,7 +28,7 @@ export default class extends React.Component {
                 popular,
                 airingToday
             });
-            
+
         }catch{
             this.setState({
                 error: "Can't find movies information"
@@ -42,6 +42,15 @@ export default class extends React.Component {
 
     render() {
         const{topRated, upcoming, popular, error, loading} = this.state;
-        return();
+        return(
+            <TVPresenter
+                topRated={topRated}
+                upcoming={upcoming}
+                popular={popular}
+                error={error}
+                loading={loading}
+
+            />
+        );
     }
 }
