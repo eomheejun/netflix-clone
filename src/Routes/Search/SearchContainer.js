@@ -45,7 +45,7 @@ export default class extends React.Component {
     }
 
     render() {
-        const{tvResults, movieResults, error, loading}
+        const{tvResults, movieResults, error, loading} = this.state;
         return();
     }
 
